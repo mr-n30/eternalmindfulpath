@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* DEBUG */
+    /* border: 1px solid #f00; */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.product-title {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.product-img {
+    max-width: 300px;
+    max-height: 300px;
+    height: 300px;
+    width: 300px;
+    margin: auto auto .5rem auto;
+    border-radius: var(--bs-border-radius-lg);
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    height: 500px;
+    margin: 0 .5rem;
+    background-image: var(--bs-gradient);
+    background-color: var(--bs-light);
+    border-radius: var(--bs-border-radius-lg);
+}
+
+.carousel {
+    width: 100%;
+    background-color: var(--bs-dark);
+    background-image: var(--bs-gradient);
+    border-radius: var(--bs-border-radius-lg);
+    padding: .5rem;
+    padding-top: 1rem;
+}
+
+article > p {
+    font-size: .7rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor-button {
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-img {
+        max-width: 250px;
+        width: 250px;
+    }
+}
