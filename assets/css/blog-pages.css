@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* DEBUG */
+    /* border: 1px solid #f00; */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.blog-title, .blog-paragraph {
+    text-align: center;
+}
+
+.blog-article-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--bs-gradient);
+    background-color: var(--bs-light);
+    padding: 1rem;
+}
+
+article > h2 {
+    text-decoration: underline;
+}
+
+.hr {
+    width: 80%;
+    margin: auto;
+}
