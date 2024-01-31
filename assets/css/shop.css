@@ -6,7 +6,8 @@
     /* border: 1px solid #f00; */
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -21,6 +22,7 @@ body, html {
     text-align: center;
     font-size: 1.5rem;
     text-decoration: underline;
+    object-fit: fill;
 }
 
 .product-img {
@@ -55,7 +57,7 @@ article {
     padding-top: 1rem;
 }
 
-article > p {
+article>p {
     font-size: .7rem;
     text-align: center;
 }
@@ -77,10 +79,16 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
 
     .product-img {
-        max-width: 250px;
-        width: 250px;
+        max-width: 200px;
+        width: 200px;
+        object-fit: fill;
+    }
+
+    article {
+        margin-bottom: 1rem;
     }
 }
